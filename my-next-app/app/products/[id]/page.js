@@ -2,6 +2,7 @@
 // app/products/[id]/page.js
 import { Star } from "lucide-react";
 
+
 const products = [
     // Kids
     { id: "1", image: "https://images.unsplash.com/photo-1628071645679-101ea5fad26f?q=80", name: "Kids T-Shirt", category: "Kids", type: "T-Shirt", price: 20, discount: 10, rating: 4 },
