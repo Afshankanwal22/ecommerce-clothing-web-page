@@ -15,11 +15,11 @@ export default function AboutPage() {
 
       {/* Our Story Section */}
       <div className="max-w-6xl grid md:grid-cols-2 gap-12 items-center mb-16">
-        <img 
-          src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd42?auto=format&fit=crop&w=800&q=80" 
-          alt="Our Story" 
-          className="rounded-xl shadow-lg w-full object-cover h-80 md:h-96"
-        />
+       <img 
+  src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80" 
+  alt="Our Story" 
+  className="rounded-xl shadow-lg w-full object-cover h-80 md:h-96"
+/>
         <div>
           <h2 className="text-3xl font-semibold text-teal-600 mb-4">Our Story</h2>
           <p className="text-gray-700 text-lg mb-4">
