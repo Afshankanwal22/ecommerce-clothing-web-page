@@ -1,6 +1,7 @@
 
 // app/products/[id]/page.js
 import { Star } from "lucide-react";
+import ProductCard from "@/app/components/productCard";
 
 
 const products = [
@@ -103,6 +104,7 @@ export default function ProductDetail({ params }) {
           <button className="mt-6 w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600 transition text-lg font-semibold">
             Add to Cart
           </button>
+          
         </div>
       </div>
     </div>

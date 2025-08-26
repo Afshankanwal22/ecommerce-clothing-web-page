@@ -21,7 +21,7 @@ export default function CategoriesPage() {
   const router = useRouter();
 
   const handleCategoryClick = (category) => {
-    router.push(`/products?category=${category}`); // ✅ products page with filter
+    router.push(`/products?category=${category}`); 
   };
 
   return (

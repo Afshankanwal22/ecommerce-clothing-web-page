@@ -57,7 +57,7 @@ export default function Navbar() {
               Shop
             </Link>
           </li>
-          <li>  categories ka page n hai abhi ?ji abhi nhi acha
+          <li>  
             <Link href="/categories" className="hover:text-teal-500 transition-colors duration-300">
               Categories
             </Link>
