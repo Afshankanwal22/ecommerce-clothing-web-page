@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4 flex flex-col items-center">
@@ -15,11 +17,14 @@ export default function AboutPage() {
 
       {/* Our Story Section */}
       <div className="max-w-6xl grid md:grid-cols-2 gap-12 items-center mb-16">
-       <img 
-  src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80" 
-  alt="Our Story" 
-  className="rounded-xl shadow-lg w-full object-cover h-80 md:h-96"
-/>
+        <div className="relative w-full h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
+          <Image 
+            src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80" 
+            alt="Our Story"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div>
           <h2 className="text-3xl font-semibold text-teal-600 mb-4">Our Story</h2>
           <p className="text-gray-700 text-lg mb-4">
@@ -59,11 +64,14 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Team Member */}
           <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
-            <img 
-              src="https://randomuser.me/api/portraits/women/68.jpg" 
-              alt="Jane Doe" 
-              className="w-32 h-32 rounded-full mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4">
+              <Image 
+                src="https://randomuser.me/api/portraits/women/68.jpg" 
+                alt="Jane Doe" 
+                fill
+                className="object-cover"
+              />
+            </div>
             <h3 className="text-xl font-bold text-gray-800 mb-1">Jane Doe</h3>
             <p className="text-gray-600 mb-2">Founder & CEO</p>
             <p className="text-gray-500 text-sm">
@@ -72,11 +80,14 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
-            <img 
-              src="https://randomuser.me/api/portraits/men/32.jpg" 
-              alt="John Smith" 
-              className="w-32 h-32 rounded-full mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4">
+              <Image 
+                src="https://randomuser.me/api/portraits/men/32.jpg" 
+                alt="John Smith" 
+                fill
+                className="object-cover"
+              />
+            </div>
             <h3 className="text-xl font-bold text-gray-800 mb-1">John Smith</h3>
             <p className="text-gray-600 mb-2">Head of Design</p>
             <p className="text-gray-500 text-sm">
@@ -85,11 +96,14 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
-            <img 
-              src="https://randomuser.me/api/portraits/women/45.jpg" 
-              alt="Emily Davis" 
-              className="w-32 h-32 rounded-full mb-4 object-cover"
-            />
+            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4">
+              <Image 
+                src="https://randomuser.me/api/portraits/women/45.jpg" 
+                alt="Emily Davis" 
+                fill
+                className="object-cover"
+              />
+            </div>
             <h3 className="text-xl font-bold text-gray-800 mb-1">Emily Davis</h3>
             <p className="text-gray-600 mb-2">Marketing Lead</p>
             <p className="text-gray-500 text-sm">

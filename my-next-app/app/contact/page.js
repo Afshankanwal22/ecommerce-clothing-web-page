@@ -7,10 +7,11 @@ export default function ContactPage() {
         Get in Touch
       </h1>
       <p className="text-gray-600 mb-12 text-center max-w-xl">
-        Have questions or feedback? Fill out the form below and we'll get back to you as soon as possible.
+        Have questions or feedback? Fill out the form below and we&apos;ll get back to you as soon as possible.
       </p>
 
       <div className="w-full max-w-6xl grid md:grid-cols-2 gap-12">
+        {/* Contact Form */}
         <div className="bg-white shadow-lg rounded-xl p-8 md:p-12">
           <form className="flex flex-col gap-6">
             <div className="flex flex-col md:flex-row gap-4">
@@ -53,6 +54,7 @@ export default function ContactPage() {
           </div>
         </div>
 
+        {/* Map */}
         <div className="rounded-xl overflow-hidden shadow-lg">
           <iframe
             className="w-full h-96 md:h-full"

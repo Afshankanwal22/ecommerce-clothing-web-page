@@ -31,8 +31,8 @@ const products = [
     { id: "20", image: "https://images.unsplash.com/photo-1507274301514-7de9f124ff54?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBzaG9ydHN8ZW58MHx8MHx8fDA%3D", name: "Women Shorts", category: "Women", type: "Shorts", price: 35, discount: 5, rating: 4 },
     { id: "21", image: "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?q=80", name: "Women Pants", category: "Women", type: "Pants", price: 50, discount: 10, rating: 4 },
     { id: "22", image: "https://images.unsplash.com/photo-1634276703006-c1236a505b36?q=80", name: "Women Hoodie", category: "Women", type: "Hoodie", price: 55, discount: 10, rating: 5 },
-    { id: "22", image: "https://plus.unsplash.com/premium_photo-1690350731538-57344931ac02?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tZW4lMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D", name: "Women Shirt", category: "Women", type: "Shirt", price: 50, discount: 10, rating: 5 },
-    { id: "23", image: "https://images.unsplash.com/photo-1637527032130-3ee8b11d0cfc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tZW4lMjBzd2VhdGVyfGVufDB8fDB8fHww", name: "Women Shirt", category: "Women", type: "Shirt", price: 45, discount: 5, rating: 5 },
+    { id: "23", image: "https://plus.unsplash.com/premium_photo-1690350731538-57344931ac02?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tZW4lMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D", name: "Women Shirt", category: "Women", type: "Shirt", price: 50, discount: 10, rating: 5 },
+    { id: "24", image: "https://images.unsplash.com/photo-1637527032130-3ee8b11d0cfc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tZW4lMjBzd2VhdGVyfGVufDB8fDB8fHww", name: "Women Shirt", category: "Women", type: "Shirt", price: 45, discount: 5, rating: 5 },
   ];
 
 // ✅ Required for static export
