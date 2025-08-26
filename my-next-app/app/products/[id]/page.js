@@ -61,6 +61,8 @@ export default function ProductDetail({ params }) {
           <img
             src={product.image}
             alt={product.name}
+            width={500}
+            height={500}
             className="w-full h-96 object-cover rounded-lg shadow"
           />
         </div>
