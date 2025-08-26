@@ -8,7 +8,6 @@ export default function HomePage() {
     { name: "kids", image: "https://images.unsplash.com/photo-1670014541811-9b0ec280ed60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpZHMlMjBDTE9USEVTfGVufDB8fDB8fHww" },
   ];
 
-
   return (
     <div className="relative min-h-screen">
       {/* Hero Section */}
@@ -18,7 +17,7 @@ export default function HomePage() {
           <img
             src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1600&auto=format&fit=crop&q=80"
             alt="Fashion"
-            className="w-full h-full object-cover opacity-50 scale-105 animate-pulse-slow"
+            className="w-full h-full object-cover opacity-50 scale-100 animate-zoom-slow"
           />
         </div>
 
@@ -61,6 +60,17 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Tailwind Custom Animation */}
+      <style jsx>{`
+        @keyframes zoom {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+        }
+        .animate-zoom-slow {
+          animation: zoom 15s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 }
