@@ -21,7 +21,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/products" className="hover:text-teal-500 transition-colors duration-300">
-            Shop
+            Products
           </Link>
         </li>
         <li>
@@ -37,7 +37,7 @@ export default function Navbar() {
         <li>
           <Link href="/contact" className="hover:text-teal-500 transition-colors duration-300">
             Contact
-          </Link>
+          </Link> 
         </li>
       </ul>
 
@@ -57,7 +57,7 @@ export default function Navbar() {
               Shop
             </Link>
           </li>
-          <li>
+          <li>  categories ka page n hai abhi ?ji abhi nhi acha
             <Link href="/categories" className="hover:text-teal-500 transition-colors duration-300">
               Categories
             </Link>
@@ -68,6 +68,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+
+    
             <Link href="/contact" className="hover:text-teal-500 transition-colors duration-300">
               Contact
             </Link>
@@ -77,15 +79,7 @@ export default function Navbar() {
 
       {/* Right Side */}
       <div className="hidden md:flex items-center gap-4">
-        {/* Search Bar */}
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search products..."
-            className="border border-gray-300 rounded-full px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-teal-400 w-64 transition"
-          />
-          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
-        </div>
+     
 
         {/* Cart Button */}
         <button className="bg-teal-500 text-white px-5 py-2 rounded-full hover:bg-teal-600 transition flex items-center gap-2 shadow-md">

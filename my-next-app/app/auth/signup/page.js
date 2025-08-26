@@ -15,15 +15,22 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center text-teal-600 mb-6">
+    <div className="flex justify-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 pt-16 pb-12">
+      <div className="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-md border border-gray-100">
+        
+        {/* Heading */}
+        <h2 className="text-3xl font-bold text-center text-teal-700 mb-6">
           Create an Account
         </h2>
+        <p className="text-center text-gray-600 mb-6 text-sm">
+          Sign up to get started with your journey 🚀
+        </p>
 
+        {/* Signup Form */}
         <form onSubmit={handleSignup} className="space-y-5">
+          {/* Full Name */}
           <div>
-            <label className="block text-gray-700 mb-1">Full Name</label>
+            <label className="block text-gray-700 mb-1 font-medium">Full Name</label>
             <input
               type="text"
               value={name}
@@ -34,8 +41,9 @@ export default function SignupPage() {
             />
           </div>
 
+          {/* Email */}
           <div>
-            <label className="block text-gray-700 mb-1">Email</label>
+            <label className="block text-gray-700 mb-1 font-medium">Email</label>
             <input
               type="email"
               value={email}
@@ -46,8 +54,9 @@ export default function SignupPage() {
             />
           </div>
 
+          {/* Password with Show/Hide */}
           <div className="relative">
-            <label className="block text-gray-700 mb-1">Password</label>
+            <label className="block text-gray-700 mb-1 font-medium">Password</label>
             <input
               type={showPassword ? "text" : "password"}
               value={password}
@@ -59,23 +68,28 @@ export default function SignupPage() {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-teal-600"
+              className="absolute right-3 top-10 -translate-y-1/2 text-gray-500 hover:text-teal-600 text-sm"
             >
               {showPassword ? "Hide" : "Show"}
             </button>
           </div>
 
+          {/* Signup Button */}
           <button
             type="submit"
-            className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition"
+            className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition duration-200"
           >
             Sign Up
           </button>
         </form>
 
+        {/* Login Redirect */}
         <p className="text-sm text-center mt-6 text-gray-600">
           Already have an account?{" "}
-          <Link href="/auth/login" className="text-teal-600 font-medium hover:underline">
+          <Link
+            href="/auth/login"
+            className="text-teal-600 font-medium hover:underline"
+          >
             Login
           </Link>
         </p>
@@ -83,4 +97,3 @@ export default function SignupPage() {
     </div>
   );
 }
-

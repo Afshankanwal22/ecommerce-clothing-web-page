@@ -1,6 +1,6 @@
 import "./globals.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footers";
 
 export const metadata = {
   title: "Clothify",
