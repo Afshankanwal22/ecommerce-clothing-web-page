@@ -9,7 +9,7 @@ const categories = [
   },
   {
     name: "Women",
-    image: "https://media.istockphoto.com/id/2152283543/photo/template-of-a-stylish-white-t-shirt.webp",
+    image: "https://images.unsplash.com/photo-1570875625565-4aaf02f5655f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
   },
   {
     name: "Kids",
