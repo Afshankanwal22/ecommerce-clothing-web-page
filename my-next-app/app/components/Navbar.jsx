@@ -24,11 +24,7 @@ export default function Navbar() {
             Products
           </Link>
         </li>
-        <li>
-          <Link href="/categories" className="hover:text-teal-500 transition-colors duration-300">
-            Categories
-          </Link>
-        </li>
+       
         <li>
           <Link href="/about" className="hover:text-teal-500 transition-colors duration-300">
             About
@@ -57,11 +53,7 @@ export default function Navbar() {
               Shop
             </Link>
           </li>
-          <li>  
-            <Link href="/categories" className="hover:text-teal-500 transition-colors duration-300">
-              Categories
-            </Link>
-          </li>
+         
           <li>
             <Link href="/about" className="hover:text-teal-500 transition-colors duration-300">
               About

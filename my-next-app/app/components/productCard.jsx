@@ -10,18 +10,20 @@ export default function ProductCard({
   price,
   rating,
   discount,
+   category,
+    type, 
 }) {
   const router = useRouter();
   const finalPrice = discount ? price - (price * discount) / 100 : price;
 
   const handleViewDetails = () => {
-    router.push(`/products/${id}`); // ✅ dynamic route open karega
+    router.push(`/categories/${category}`); 
   };
 
   return (
     <div
       className="relative bg-white shadow-md rounded-xl p-4 hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer"
-      onClick={handleViewDetails} // pura card bhi clickable ban gaya
+      onClick={handleViewDetails} // pura card clickable
     >
       {/* Discount Badge */}
       {discount > 0 && (
@@ -48,12 +50,20 @@ export default function ProductCard({
         <span className="text-teal-600 font-bold text-lg">${finalPrice}</span>
       </div>
 
-      {/* Rating */}
+      {/* ⭐ Star Rating */}
       <div className="flex items-center mt-2 gap-1">
         {rating > 0 ? (
           <>
-            <Star size={16} className="fill-yellow-400 text-yellow-400" />
-            <span className="text-gray-700 text-sm">{rating}/5</span>
+            {Array.from({ length: 5 }, (_, index) => (
+              <Star
+                key={index}
+                size={16}
+                className={`${
+                  index < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+                }`}
+              />
+            ))}
+            <span className="text-gray-700 text-sm ml-1">{rating}/5</span>
           </>
         ) : (
           <span className="text-gray-500 italic text-sm">New Arrival</span>
@@ -61,11 +71,10 @@ export default function ProductCard({
       </div>
 
       {/* View Details Button */}
-    <Link href={`/products/${id}`}>
-        {" "}
+      <Link href={`/products/${id}`}>
         <button
           onClick={(e) => {
-            e.stopPropagation(); // card ka click block kare
+            e.stopPropagation();
             handleViewDetails();
           }}
           className="mt-4 w-full bg-gradient-to-r from-teal-500 to-teal-600 text-white py-2 rounded-lg hover:opacity-90 transition font-medium"
